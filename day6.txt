@@ -1,0 +1,41 @@
+1.class about movie rating
+class movie {
+       constructor ( title = '', studio= '', rating = 'R'){
+       this.movie = title;
+       this.studio = studio;
+       this.rating = rating;
+}
+     GETPG(movies = [], rating = ""){
+     return movies.filter((e)=> e.rating === rating)
+   }
+}
+  
+
+
+const CasinoRoyale = new movie("Casino Royal","Eon Productions", "R");
+const johnwick = new movie("johnwick","Thunder Road Films","R");
+const spiderman = new movie("spiderman","sony pictures","R");
+const ThorloveandThunder = new movie("Thor love and thunder", "Marvel studios","PG");
+const Inception = new movie("Inception","Warner Bros","PG");
+const Leo = new movie("Leo","7 screen","PG");
+
+const moviearr = [CasinoRoyale,johnwick,spiderman,ThorloveandThunder,Inception,Leo]
+console.log(CasinoRoyale.GETPG(moviearr,"PG"));
+
+2. person details using class
+class person {
+       constructor ( name = '', age= '', qualification = ''){
+       this.name = name;
+       this.age = age;
+       this.qualification = qualification;
+}
+}
+const Mahendran = new person("Mahendran","25", "BE");
+const johnwick = new person("johnwick","45","MBBS");
+const Gugan = new person("gugan","22","HSC");
+const Vaish = new person("vaish", "21","Bsc");
+
+console.log(Mahendran);
+console.log(johnwick);
+console.log(Gugan);
+console.log(Mahendran);
